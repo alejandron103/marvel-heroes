@@ -4,7 +4,7 @@
     width: calc(25vw - 40px);
     background-color: $grey-medium;
     padding: 20px;
-    height: 1400px;
+    height: 100%;
     overflow-y: scroll;
     @media (max-width: $medium-screen) {
         width: calc(40vw - 40px);
