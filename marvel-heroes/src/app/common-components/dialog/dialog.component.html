@@ -1,0 +1,14 @@
+<div class="modal" [class.selected]="isFavorite">
+    <img mat-dialog-close class="modal__close-icon" src="../../../assets/icons/btn-close.png" alt="close icon">
+    <div class="modal__content">
+        <img [src]="buildImgSrc(data.thumbnail)" [alt]="data.title" class="modal__comic-img">
+        <div class="modal__info">
+            <h4 class="modal__title">{{data.title}}</h4>
+            <p class="modal__description">{{data.description}}</p>
+        </div>
+    </div>
+    <div class="modal__buttons" mat-dialog-actions>
+        <button [disabled]="isFavorite" class="modal__btn modal__btn-left" (click)="addFavourites(data)" tabindex="2">Add to favourites</button>
+        <button class="modal__btn modal__btn-right" mat-dialog-close tabindex="-1">Buy for {{ data.pageCount | currency }}</button>
+      </div>
+</div>

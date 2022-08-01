@@ -1,0 +1,112 @@
+@import '../styles/helpers';
+
+.hero{
+    background-color: $white;
+    padding: 0 10px 10px;
+    margin-bottom: 20px;
+    &:hover{
+        .hero__title {
+            color: $red-marvel;
+        }
+    }
+    &__main-info{
+        display: flex; 
+    }
+    &__image{
+        width: 15vw;
+        height: 15vw;
+        object-fit:contain;
+        border-radius:50%
+    }
+    &__info{
+        margin-left: 20px;
+    }
+    &__description{
+        display: block;
+        display: -webkit-box;
+        max-width: 100%;
+        margin: 0 ;
+ 
+        line-height: 1;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @media (max-width: $lg-screen){
+        -webkit-line-clamp: 4;
+        }
+
+    }
+    &__title{
+        font-size: calculateRem(20px);
+        line-height: 105%;
+        font-weight: 700;
+        margin: 10px 0;
+    }
+    &__container-comics{
+        opacity: 0;
+        height: 0;
+        transition: 0.8s ease-in;
+        overflow: hidden;
+        &.show-comics{
+            opacity: 1;
+            height: auto;
+            .hero__comics{
+                height: auto;
+            }
+        }
+    }
+    &__comics{
+        width: 100%;
+        padding: 0;
+        margin: 10px 0 0;
+        font-size: 0;
+        display: flex;
+        flex-wrap: wrap;
+        height: 0;
+        justify-content: space-between;
+    }
+    &__comic{
+        margin: 5px 0;
+        display: inline-block;
+        width: calc(50% - 10px);
+        vertical-align: top;
+        font-size: calculateRem(14px);
+        cursor: pointer;
+        background-size: 0;
+        padding-left: 0;
+        transition: .4s ease-in;
+        position: relative;
+        &::before{
+            content: "";
+            width: 0px;
+            height: 10px;
+            position: absolute;
+            background-image: url(../../assets/icons/link-arrow.png);
+            background-repeat: no-repeat;
+            background-size: 20px 10px;
+            left: 0px;      
+            transition: .4s ease-in-out;  
+        }
+        &:hover{
+            padding-left: 20px;
+            color: $red-marvel;
+            &::before{
+                width: 20px;
+            }
+        }
+    }
+    &__btn{
+        margin-top: 10px;
+        padding: 7px 9px;
+        font-size:  calculateRem(12px);
+        font-weight: 700;
+        text-transform: uppercase;
+        background-color: $red-marvel;
+        color: $white;
+        border: none;
+        &:disabled{
+            background-color: $disabled-background;
+        }
+    }
+}

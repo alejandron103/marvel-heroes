@@ -1,0 +1,12 @@
+<section class="paginator">
+    <div class="paginator__container-numbers">
+        <button class="paginator__page-number indicator indicator-prev" [disabled]="pagesCurrentValue === 1" (click)="setOffset(prevPage)"></button>
+        <button class="paginator__page-number" 
+            [class.active]="pageNumber === pagesCurrentValue"
+            *ngFor="let pageNumber of numberPages" 
+            (click)="setOffset(pageNumber)">
+            {{pageNumber}}
+        </button>
+        <button class="paginator__page-number indicator indicator-next" [disabled]="pagesCurrentValue === numberPages.length" (click)="setOffset(pagesCurrentValue + 1)"></button>
+    </div>
+</section>

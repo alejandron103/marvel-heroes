@@ -1,0 +1,4 @@
+<section class="favorites">
+    <app-section-title [icon]="'../../assets/icons/favourites.png'" [title]="'My favourites'"></app-section-title>
+    <app-favourite *ngFor="let favourite of favourites" [favourite]="favourite" (deleteFavouriteEvent)="deleteFavourite($event)"></app-favourite>
+</section>

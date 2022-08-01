@@ -1,0 +1,10 @@
+@import '../styles/helpers.scss';
+
+
+.characters{
+    width: calc(75vw - 60px);
+    padding: 20px;
+    @media (max-width: $medium-screen) {
+        width: calc(60vw - 60px);
+    }
+}

@@ -1,0 +1,8 @@
+<header>
+    <img src="../assets/img/logo.png" class="logo">
+    <app-hero-search (searchHeroEvent)="searchHeroes($event)"></app-hero-search>
+</header>
+<section class="main-section">
+    <app-characters [heroes]="heroes$" (setOffsetPaginatorEvent)="setPage($event)"></app-characters>
+    <app-favorites></app-favorites>
+</section>

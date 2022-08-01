@@ -1,0 +1,84 @@
+@import '../../styles/helpers.scss';
+:host {
+    display: block;
+    background: $white;
+    color: $black;
+    border-radius: 0;
+}
+::ng-deep{
+    .mat-dialog-container{
+        background-color: $white;
+        position: relative;
+    }
+}
+.modal{
+    &.selected{
+        .modal__btn-left{
+            background-color: $black;
+            color: $red-marvel;
+            background-image: url(../../../assets/icons/btn-favourites-primary.png);
+        }
+    }
+    &__close-icon{
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        width: 24px;
+        cursor: pointer;
+    }
+    &__content{
+        padding-top: 15px;
+        display: flex;
+    }
+    &__info{
+        margin-left: 1.8rem;
+    }
+    &__comic-img{
+        width: 20vw;
+        height: 40vh;
+    }
+    &__title{
+        font-size: calculateRem(22px);
+        margin-top: 0;
+        margin-bottom: 15px;
+        width: 78%;
+    }
+    &__description{
+        font-size: calculateRem(16px);
+    }
+    &__buttons{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 24px;
+        padding: 0;
+    }
+    &__btn{
+        align-items: center;
+        height: 60px;
+        font-size: calculateRem(13px);
+        width: 50%;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        text-align: center;
+        border: none;
+        -webkit-appearance: none;
+        appearance: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        &-left{
+            background-position: 17% center;
+            background-color: $grey-medium;
+            background-image: url(../../../assets/icons/btn-favourites-default.png);
+            &:disabled{
+                cursor: not-allowed;
+            }
+        }
+        &-right{
+            background-position: 22% center;
+            background-color: $grey-button;
+            color: $red-marvel;
+            background-image: url(../../../assets/icons/shopping-cart-primary.png);
+        }
+    }
+}

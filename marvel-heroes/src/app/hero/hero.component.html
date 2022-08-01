@@ -1,0 +1,20 @@
+<div class="hero">
+    <div class="hero__main-info">
+      <img class="hero__image"
+        loading="lazy"
+        [src]="buildImgSrc(hero.thumbnail)"
+        alt={{hero.name}}
+      />
+      <div class="hero__info">
+        <h3 class="hero__title">{{hero.name | uppercase }}</h3>
+        <p class="hero__description">{{hero.description !== '' ? hero.description : 'Description not avaible'}}</p>
+        <button [disabled]="hero.comics.items.length < 1" class="hero__btn" (click)="setShowComics()">View more</button>
+      </div>
+    </div>
+    <div class="hero__container-comics" [class.show-comics]="showComics">
+        <h3 class="hero__title">Related Comics</h3>
+        <div class="hero__comics">
+          <p class="hero__comic" *ngFor="let comic of hero.comics.items" (click)="openDetail(comic.resourceURI)">{{comic.name}}</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,5 @@
+<div class="favourite">
+    <img src="../../assets/icons/btn-delete.png" class="favourite__delete" alt="delet comic icon" (click)="deleteFavourite()">
+    <img class="favourite__img" [src]="buildImgSrc(favourite.thumbnail)" [alt]="favourite.title" >
+    <h4 class="favourite__title">{{favourite.title}}</h4>
+</div>

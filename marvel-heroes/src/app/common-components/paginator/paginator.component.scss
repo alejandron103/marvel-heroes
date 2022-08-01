@@ -1,0 +1,40 @@
+@import '../../styles/helpers.scss';
+
+.paginator{
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    &__container-numbers{
+        display: inline-flex;
+    }
+    &__page-number{
+        margin-right: 8px;
+        width: 35px;
+        height: 35px;
+        background-color: $white;
+        color: $black;
+        box-shadow: 0px 3px 5px -1px rgba($black,0.33);
+        font-weight: bold;
+        border: none;
+        opacity: .6;
+        &:disabled{
+            opacity: .3;
+        }
+        &.active{
+            opacity: 1;
+            box-shadow: none;
+            pointer-events: none;
+        }
+    }
+    .indicator{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 20px;
+        &-next{
+            background-image: url(../../../assets/icons/btn_arrow_right.png);
+        }
+        &-prev{
+            background-image: url(../../../assets/icons/btn_arrow_left.png);
+        }
+    }
+}

@@ -1,0 +1,26 @@
+@import '../styles/helpers.scss';
+#finder{
+    margin-left: 8rem;
+    display: block;
+    width: 40vw;
+    label{
+        opacity: 0;
+        width: 0;
+        height: 0;
+        display: block;
+    }
+    input{
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-image: url(../../assets/icons/search.png);
+        background-position: 99%;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        border: none;
+        color: $disabled-background;
+        :focus{
+            border:none;
+        }
+    }
+}

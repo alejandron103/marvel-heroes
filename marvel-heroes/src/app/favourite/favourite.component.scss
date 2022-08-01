@@ -1,0 +1,29 @@
+@import '../styles/helpers.scss';
+
+.favourite{
+    margin-bottom: 40px;
+    position: relative;
+    &:first-child{
+        margin-top: 30px;
+    }
+    &__img{
+        width: 70%;
+        margin: 0 auto 20px;
+        display: block;
+        aspect-ratio: 4/6;
+    }
+    &__title{
+        font-weight: 700;
+        width: 70%;
+        font-size: calculateRem(18px);
+        text-align: center;
+        margin: 20px auto 0
+    }
+    &__delete{
+        position: absolute;
+        right: 11%;
+        top: -5%;
+        width: 30px;
+        cursor: pointer;
+    }
+}

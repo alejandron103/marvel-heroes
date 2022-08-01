@@ -1,0 +1,5 @@
+<section class="characters">
+    <app-section-title [icon]="'../assets/icons/characters.png'" [title]="'Characters'"></app-section-title>
+    <app-heroes [heroes]="heroes"></app-heroes>
+    <app-paginator [pagesNumber]="pagesNumber" (setOffSetEvent)="setOffsetPaginator($event)"></app-paginator>
+</section>

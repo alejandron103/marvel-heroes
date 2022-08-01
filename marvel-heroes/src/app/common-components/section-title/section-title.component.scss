@@ -1,0 +1,15 @@
+@import '../../styles/helpers';
+
+.section-title{
+    display: flex;
+    align-items: center;
+    img{
+        width: 30px;
+        height: 30px;
+    }
+    &__title{
+        font-size: calculateRem(25px);
+        font-weight: 700;
+        margin: 0 0 0 10px;
+    }
+}
