@@ -18,8 +18,7 @@ export interface Thumbnail {
     extension: string
 }
 
-export interface IHeroesSearch {
+export interface HeroesSearch {
     search: string;
     page: number;
-    limit: number;
 }
