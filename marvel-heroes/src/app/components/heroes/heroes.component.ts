@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Hero } from '../interfaces/Hero';
+import { Hero } from '../../interfaces/Hero';
 
 @Component({
   selector: 'app-heroes',

@@ -45,6 +45,14 @@
     }
     &__description{
         font-size: calculateRem(16px);
+        max-width: 100%;
+        display: -webkit-box;
+        margin: 0;
+        line-height: 1;
+        -webkit-line-clamp: 13;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     &__buttons{
         position: absolute;

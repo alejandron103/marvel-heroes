@@ -1,7 +1,7 @@
 import { Component, OnInit, SimpleChanges } from '@angular/core';
 import { lastValueFrom, take } from 'rxjs';
-import { Comic } from '../interfaces/Comic';
-import { ComicService } from '../services/comic.service';
+import { Comic } from '../../interfaces/Comic';
+import { ComicService } from '../../services/comic.service';
 
 @Component({
   selector: 'app-favorites',

@@ -1,10 +1,10 @@
 import { Component, Input, OnInit, Output } from '@angular/core';
 import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { lastValueFrom, map, take } from 'rxjs';
-import { DialogComponent } from '../common-components/dialog/dialog.component';
-import { Comic } from '../interfaces/Comic';
-import { Hero, Thumbnail } from '../interfaces/Hero';
-import { ComicService } from '../services/comic.service';
+import { DialogComponent } from '../../common-components/dialog/dialog.component';
+import { Comic } from '../../interfaces/Comic';
+import { Hero, Thumbnail } from '../../interfaces/Hero';
+import { ComicService } from '../../services/comic.service';
 
 @Component({
   selector: 'app-hero',

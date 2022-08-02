@@ -5,18 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { FormsModule } from '@angular/forms';
-import { HeroesComponent } from './heroes/heroes.component'
+import { HeroesComponent } from './components/heroes/heroes.component'
 import { HttpClientModule } from '@angular/common/http';
-import { HeroSearchComponent } from './hero-search/hero-search.component';
-import { HeroComponent } from './hero/hero.component';
+import { HeroSearchComponent } from './components/hero-search/hero-search.component';
+import { HeroComponent } from './components/hero/hero.component';
 import { SectionTitleComponent } from './common-components/section-title/section-title.component';
-import { FavoritesComponent } from './favorites/favorites.component';
+import { FavoritesComponent } from './components/favorites/favorites.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
-import { CharactersComponent } from './characters/characters.component';
+import { CharactersComponent } from './components/characters/characters.component';
 import { DialogComponent } from './common-components/dialog/dialog.component';
 import { PaginatorComponent } from './common-components/paginator/paginator.component';
-import { FavouriteComponent } from './favourite/favourite.component';
+import { FavouriteComponent } from './components/favourite/favourite.component';
 
 @NgModule({
   declarations: [

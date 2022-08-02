@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, OnChanges, OnInit, Output, ViewChild } from '@angular/core';
 import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import { Observable, of, tap } from 'rxjs';
-import { Hero } from '../interfaces/Hero';
+import { Hero } from '../../interfaces/Hero';
 
 @Component({
   selector: 'app-characters',

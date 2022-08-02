@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { Comic } from '../interfaces/Comic';
-import { Thumbnail } from '../interfaces/Hero';
+import { Comic } from '../../interfaces/Comic';
+import { Thumbnail } from '../../interfaces/Hero';
 
 @Component({
   selector: 'app-favourite',
