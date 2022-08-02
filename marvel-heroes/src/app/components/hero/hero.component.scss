@@ -1,4 +1,4 @@
-@import '../../styles/helpers';
+@import '../../styles/helpers.scss';
 
 .hero{
     background-color: $white;
@@ -82,7 +82,7 @@
             width: 0px;
             height: 10px;
             position: absolute;
-            background-image: url(../../assets/icons/link-arrow.png);
+            background-image: url(../../../assets/icons/link-arrow.png);
             background-repeat: no-repeat;
             background-size: 20px 10px;
             left: 0px;      
